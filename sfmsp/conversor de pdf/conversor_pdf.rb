@@ -212,6 +212,6 @@ Dir.glob(caminho + "/*.pdf").each do |arquivo|
   reader.pages.each do |page|
     array << extrai_tabela(page.text)
   end
-
+ 
   gera_excel(array, arquivo)
 end
