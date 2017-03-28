@@ -3,7 +3,7 @@ require 'pdf-reader'
 require 'writeexcel'
 
 caminho = File.expand_path File.dirname(__FILE__)
-Dir.glob(caminho + "/*.pdf").each do |arquivo|
+Dir.glob(caminho + "/*.pdf").each do |arquivo| 
 
   reader = PDF::Reader.new(arquivo)
 
